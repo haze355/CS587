@@ -1,7 +1,7 @@
 import random
 import sys
 
-
+# convert to candidate key according to wisconsin benchmark paper
 def convert(uni):
     result = list('A'*7)
     i = 6
@@ -13,7 +13,7 @@ def convert(uni):
     result.reverse()
     return "".join(result) + "x" * 45
 
-
+# generate string4
 def stringFour(tupCount):
     i = tupCount
     if i % 4 == 0:
