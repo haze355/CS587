@@ -30,3 +30,7 @@ CREATE TABLE ONEKUP
   string4         char(52) NOT NULL,            # cyclic
 )
 ```
+
+## Part Two
+
+https://docs.google.com/document/d/1YivibuX53ho1tcY-2r9xcyhjEjU5wIRdrySL9f9xVdI/edit?usp=sharing
