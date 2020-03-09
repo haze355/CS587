@@ -34,3 +34,12 @@ CREATE TABLE ONEKUP
 ## Part Two
 
 https://docs.google.com/document/d/1YivibuX53ho1tcY-2r9xcyhjEjU5wIRdrySL9f9xVdI/edit?usp=sharing
+
+```SQL
+SELECT *
+FROM tenkup1,onehundredkup1,onehundredkup2
+WHERE tenkup1.unique2 = onehundredkup1.unique2
+AND onehundredkup1.unique2 = onehundredkup2.unique2
+AND onehundredkup1.unique2 < 1000;
+```
+
