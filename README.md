@@ -36,15 +36,24 @@ CREATE TABLE ONEKUP
 https://docs.google.com/document/d/1YivibuX53ho1tcY-2r9xcyhjEjU5wIRdrySL9f9xVdI/edit?usp=sharing
 
 ```SQL
-SELECT a.unique3, b.unique3, c.unique3
-FROM tenkup1 a, tenkup2 b, tenkup3 c
-WHERE a.unique1 = b.unique1
-AND a.unique1 = c.unique1
+50% selectivity:
+UPDATE onehundredkup1
+SET two = 1
+WHERE four = 0 or four = 1
 
-SELECT a.unique3, b.unique3, c.unique3
-FROM onehundredkup1 a, onehundredkup2 b, onehundredkup3 c
-WHERE a.unique1 = b.unique1
-AND a.unique1 = c.unique1;
+75% selectivity:
+UPDATE onehundredkup1
+SET two=1
+WHERE four <= 2
+
+100% selectivity:
+UPDATE onehundredkup1
+SET two=1
+WHERE four >= 0
+
+Bulk update using index
+UPDATE onehundredkup1
+SET unique1 = unique2
 
 ```
 
