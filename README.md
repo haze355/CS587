@@ -36,13 +36,15 @@ CREATE TABLE ONEKUP
 https://docs.google.com/document/d/1YivibuX53ho1tcY-2r9xcyhjEjU5wIRdrySL9f9xVdI/edit?usp=sharing
 
 ```SQL
-Create partial index on PostgreSQL:
-CREATE INDEX idx_two ON onehundredkup(two) WHERE two = 0
+SELECT a.unique3, b.unique3, c.unique3
+FROM tenkup1 a, tenkup2 b, tenkup3 c
+WHERE a.unique1 = b.unique1
+AND a.unique1 = c.unique1
 
-Perform query on both systems:
-INSERT INTO TMP
-SELECT * FROM onehundredkup
-WHERE two = 0
+SELECT a.unique3, b.unique3, c.unique3
+FROM onehundredkup1 a, onehundredkup2 b, onehundredkup3 c
+WHERE a.unique1 = b.unique1
+AND a.unique1 = c.unique1;
 
 ```
 
