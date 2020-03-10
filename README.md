@@ -35,25 +35,4 @@ CREATE TABLE ONEKUP
 
 https://docs.google.com/document/d/1YivibuX53ho1tcY-2r9xcyhjEjU5wIRdrySL9f9xVdI/edit?usp=sharing
 
-```SQL
-50% selectivity:
-UPDATE onehundredkup1
-SET two = 1
-WHERE four = 0 or four = 1
-
-75% selectivity:
-UPDATE onehundredkup1
-SET two=1
-WHERE four <= 2
-
-100% selectivity:
-UPDATE onehundredkup1
-SET two=1
-WHERE four >= 0
-
-Bulk update using index
-UPDATE onehundredkup1
-SET unique1 = unique2
-
-```
 
